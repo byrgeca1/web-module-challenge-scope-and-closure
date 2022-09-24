@@ -30,11 +30,12 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  counter1 is a variable outside of scope and counter2 is a function.
   2. Which of the two uses a closure? How can you tell?
-  
+  function counterMaker uses a clossure because it has the variable inside of the curly brackets. 
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     counter1 would be better used for a calculator, and counter2 would be better used on a score keeping system.
 */
 
 // counter1 code
