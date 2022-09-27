@@ -66,10 +66,10 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  let count = 0;
   
+  return Math.random(Math.round);
 }
-
+console.log(inning());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
