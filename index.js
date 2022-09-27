@@ -85,10 +85,19 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*Code Here*/){
-  /*Code Here*/
+function finalScore(callbackFuntion, time){
+  let homeTeam = 0;
+  let awayTeam = 0;
+  for (let i = 0; i < time; i++){
+    homeTeam = homeTeam + callbackFuntion();
+    awayTeam = awayTeam + callbackFuntion();
+  }
+  return {
+    Home: homeTeam,
+    Away: awayTeam
+  }
 }
-
+console.log(finalScore(inning, 9));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
